@@ -1,0 +1,24 @@
+/* 
+    Created on : Dec 13, 2018, 10:51:48 AM
+    Author     : nathan.hibbetts
+*/
+
+.button
+{
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+}
+
+.button:hover:pressed {
+    -fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+}
+
+.button:hover{
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+}
