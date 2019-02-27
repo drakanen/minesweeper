@@ -192,6 +192,7 @@ public class Controller {
                     
                     if (bt.getText().equals("0"))
                     {
+                        bt.setVisible(false);
                         testZero(x, y);
                     }
                 }
@@ -318,6 +319,9 @@ public class Controller {
                 if (arr[x + 1][y].getText().equals("0") && !arr[x + 1][y].getId().equals("Safe-Checked"))
                 {
                     arr[x + 1][y].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x + 1][y].setVisible(false);
                     testZero(x + 1, y);
                 }
             }
@@ -337,6 +341,9 @@ public class Controller {
                 if (arr[x - 1][y].getText().equals("0") && !arr[x-1][y].getId().equals("Safe-Checked"))
                 {
                     arr[x - 1][y].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x - 1][y].setVisible(false);
                     testZero(x - 1, y);
                 }
             }
@@ -356,6 +363,9 @@ public class Controller {
                 if (arr[x + 1][y + 1].getText().equals("0") && !arr[x+1][y+1].getId().equals("Safe-Checked"))
                 {
                     arr[x+1][y+1].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x+1][y+1].setVisible(false);
                     testZero(x + 1, y + 1);
                 }
             }
@@ -375,6 +385,9 @@ public class Controller {
                 if (arr[x - 1][y + 1].getText().equals("0") && !arr[x-1][y+1].getId().equals("Safe-Checked"))
                 {
                     arr[x-1][y+1].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x-1][y+1].setVisible(false);
                     testZero(x - 1, y + 1);
                 }
             }
@@ -394,6 +407,9 @@ public class Controller {
                 if (arr[x][y + 1].getText().equals("0")&& !arr[x][y+1].getId().equals("Safe-Checked"))
                 {
                     arr[x][y+1].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x][y+1].setVisible(false);
                     testZero(x, y + 1);
                 }
             }
@@ -413,6 +429,9 @@ public class Controller {
                 if (arr[x + 1][y - 1].getText().equals("0")&& !arr[x+1][y+1].getId().equals("Safe-Checked"))
                 {
                     arr[x+1][y-1].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x+1][y-1].setVisible(false);
                     testZero(x + 1, y - 1);
                 }
             }
@@ -432,6 +451,9 @@ public class Controller {
                 if (arr[x - 1][y - 1].getText().equals("0")&& !arr[x-1][y-1].getId().equals("Safe-Checked"))
                 {
                     arr[x-1][y-1].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x-1][y-1].setVisible(false);
                     testZero(x - 1, y - 1);
                 }
             }
@@ -452,6 +474,9 @@ public class Controller {
                 if (arr[x][y - 1].getText().equals("0")&& !arr[x][y-1].getId().equals("Safe-Checked"))
                 {
                     arr[x][y-1].setId("Safe-Checked");
+                    
+                    //Set button invisible
+                    arr[x][y-1].setVisible(false);
                     testZero(x, y - 1);
                 }
             }
